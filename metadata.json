@@ -1,0 +1,5 @@
+{
+  "name": "Corazones Dorados",
+  "description": "An application to help families monitor the well-being of elderly loved ones at home, providing real-time location, activity levels, and AI-powered daily summaries.",
+  "requestFramePermissions": []
+}

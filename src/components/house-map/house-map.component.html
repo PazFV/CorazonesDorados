@@ -1,0 +1,19 @@
+
+<div class="p-4 bg-white rounded-lg shadow-md">
+  <h3 class="text-lg font-semibold text-gray-700 mb-4">Ubicación Actual en Casa</h3>
+  <div class="grid grid-cols-3 grid-rows-3 gap-2 h-64">
+    @for (room of rooms; track room.name) {
+      <div 
+        class="flex items-center justify-center rounded-lg border text-center p-2 transition-all duration-300"
+        [class]="room.position"
+        [class.bg-blue-500]="room.name === currentRoom()"
+        [class.text-white]="room.name === currentRoom()"
+        [class.font-bold]="room.name === currentRoom()"
+        [class.bg-gray-100]="room.name !== currentRoom()"
+        [class.text-gray-600]="room.name !== currentRoom()"
+      >
+        <span>{{ room.label }}</span>
+      </div>
+    }
+  </div>
+</div>
